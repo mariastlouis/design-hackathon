@@ -1,0 +1,192 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+nav {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+}
+
+:-webkit-any(article,aside,nav,section) h1 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+h1, h2 {
+    font-weight: 300;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.light {
+  color: gray;
+}
+
+.logout {
+  background: #515151;
+  color: white;
+  font-weight: 300;
+  border-color: 0;
+  border-radius: 0;
+  padding: 8px;
+  width: 77px;
+}
+
+.main {
+  display: flex;
+  flex-direction:row;
+}
+
+.left {
+  width: 30%;
+
+}
+
+.right {
+  width: 70%;
+}
+
+.tracker-bar {
+  height: 50px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.tracker-1 {
+background: #0d6a99;
+}
+.tracker-2 {
+background: #0f7da8;
+}
+.tracker-3 {
+background: #1589b7;
+}
+.tracker-4 {
+background:#1897c9;
+}
+.tracker-5 {
+background: #1da2d6;
+}
+.tracker-6 {
+background:#990e50;
+}
+
+.calendar {
+  width: 100%;
+}
+
+h2 {
+  color: #74747d;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.activity-head {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.activity {
+  margin: 10px;
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid white;
+}
+
+.activity-head {
+font-size: 15px;
+}
+.activity-image {
+  width: 150px;
+}
+
+.activity-container{
+  width: 1010px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.activity-holder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.triangle {
+  margin-left: 5px;
+  width: 15px;
+}
+
+.show-mobile {
+  display: none;
+}
+
+
+.nav-shrink {
+  width: 15px;
+}
+
+.responsive-image {
+    width: 30px;
+}
+
+@media screen and (max-width: 1450px) {
+  .activity-container {
+    width: 760px;
+  }
+  
+}
+
+@media screen and (max-width: 1100px) {
+  .activity-container {
+    width: 520px;
+  }
+
+@media screen and (max-width: 760px) {
+  .main {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+
+  .activity-container {
+    width: 250px;
+  }
+
+  .show-mobile {
+    display: block;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .tracker-bar.tracker-6 {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10;
+}
+
+}
